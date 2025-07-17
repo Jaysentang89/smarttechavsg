@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smarttech AV System PTE LTD</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Orbitron', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #0c1c3c;
+      color: white;
+      text-align: center;
+    }
+    header {
+      background: #0a1833;
+      padding: 2rem 1rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin: 0.5rem 0;
+      color: #00baff;
+    }
+    p {
+      max-width: 600px;
+      margin: 0.5rem auto;
+      line-height: 1.6;
+    }
+    .lang-toggle {
+      margin: 1rem;
+    }
+    section {
+      margin: 2rem auto;
+      padding: 1rem;
+      max-width: 800px;
+      background: #101e3d;
+      border-radius: 12px;
+    }
+    .whatsapp {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.8rem 1.2rem;
+      background: #25D366;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Smarttech AV System PTE LTD</h1>
+    <p id="desc-en">We provide professional AV solutions for schools, camps, corporate meetings, broadcasting, and large display systems.</p>
+    <p id="desc-zh" style="display: none;">我们为学校、兵营、企业会议、广播系统和大屏幕显示系统提供专业视听方案。</p>
+    <div class="lang-toggle">
+      <button onclick="toggleLang()">中 / EN</button>
+    </div>
+  </header>
+
+  <section>
+    <h2 id="service-en">Our Services</h2>
+    <ul id="list-en">
+      <li>School Projection Systems</li>
+      <li>Military AV Installations</li>
+      <li>Corporate Meeting Rooms</li>
+      <li>Broadcasting Systems</li>
+      <li>Large Screen Displays</li>
+    </ul>
+    <ul id="list-zh" style="display: none;">
+      <li>学校投影系统</li>
+      <li>军营视听安装</li>
+      <li>企业会议室系统</li>
+      <li>广播系统</li>
+      <li>大屏幕显示器</li>
+    </ul>
+  </section>
+
+  <a class="whatsapp" href="https://wa.me/6580852115" target="_blank">Contact via WhatsApp</a>
+
+  <script>
+    function toggleLang() {
+      const zh = document.getElementById('desc-zh');
+      const en = document.getElementById('desc-en');
+      const listZh = document.getElementById('list-zh');
+      const listEn = document.getElementById('list-en');
+      const title = document.getElementById('service-en');
+
+      if (zh.style.display === 'none') {
+        zh.style.display = 'block';
+        en.style.display = 'none';
+        listZh.style.display = 'block';
+        listEn.style.display = 'none';
+        title.innerText = '我们的服务';
+      } else {
+        zh.style.display = 'none';
+        en.style.display = 'block';
+        listZh.style.display = 'none';
+        listEn.style.display = 'block';
+        title.innerText = 'Our Services';
+      }
+    }
+  </script>
+</body>
+</html>
