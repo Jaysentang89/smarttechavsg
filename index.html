@@ -1,67 +1,154 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Smarttech AV System PTE LTD - Projector Singapore, Audio Visual Solutions for schools, military camps, and corporate offices." />
-  <meta name="keywords" content="projector singapore, audio visual, AV integration, smarttech av, meeting room AV, school projector, broadcast system" />
+  <meta name="description" content="Smarttech AV System PTE LTD - Smart projector, AV, and communication solutions in Singapore" />
+  <meta name="keywords" content="projector singapore, AV solutions, Epson, NEC, Barco, Logitech, smarttech AV" />
   <meta name="author" content="Smarttech AV System PTE LTD" />
-  <title>Smarttech AV System PTE LTD</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
-</head><body>
+  <title>Smarttech AV System</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #001f3f, #0074D9);
+      color: white;
+    }
+    header {
+      padding: 2rem;
+      text-align: center;
+      background-color: rgba(0,0,0,0.3);
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.2rem;
+    }
+    .slogan {
+      font-size: 1.2rem;
+      color: #00d8ff;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 1rem 0;
+    }
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #00d8ff;
+    }
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .dual {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .card {
+      background-color: rgba(255,255,255,0.1);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      flex: 1 1 45%;
+      min-width: 300px;
+      margin-bottom: 1rem;
+    }
+    .services .card {
+      text-align: center;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: rgba(0,0,0,0.4);
+      font-size: 0.9rem;
+    }
+    .lang-switch {
+      text-align: center;
+      margin-top: 1rem;
+    }
+    button {
+      background-color: #0074D9;
+      border: none;
+      padding: 0.5rem 1rem;
+      margin: 0 0.5rem;
+      border-radius: 8px;
+      cursor: pointer;
+      color: white;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
   <header>
-    <div class="logo">Smarttech AV</div>
+    <h1>Smarttech AV System</h1>
+    <p class="slogan" id="slogan-en">Smart Solutions for Projection, Sound, and Communication</p>
+    <p class="slogan hidden" id="slogan-zh">智享视听，连接未来</p>
     <nav>
-      <ul>
-        <li><a href="#home" data-en="Home" data-zh="首页">Home</a></li>
-        <li><a href="#about" data-en="About Us" data-zh="关于我们">About</a></li>
-        <li><a href="#services" data-en="Services" data-zh="服务项目">Services</a></li>
-        <li><a href="#contact" data-en="Contact" data-zh="联系我们">Contact</a></li>
-        <li class="lang-toggle"><button id="langBtn">中文</button></li>
-      </ul>
+      <a href="#about">About / 关于我们</a>
+      <a href="#services">Services / 服务项目</a>
+      <a href="#contact">Contact / 联系我们</a>
     </nav>
-  </header>  <section id="home" class="section">
-    <h1 data-en="Smart Solutions for Projection, Sound, and Communication"
-        data-zh="智享视听，连接未来">Smart Solutions for Projection, Sound, and Communication</h1>
-    <div class="buttons">
-      <a href="#about">About Us</a>
-      <a href="#services">Our Services</a>
-      <a href="#contact">Contact Us</a>
+    <div class="lang-switch">
+      <button onclick="switchLang('en')">English</button>
+      <button onclick="switchLang('zh')">中文</button>
     </div>
-  </section>  <section id="about" class="section">
-    <h2 data-en="About Us" data-zh="关于我们">About Us</h2>
-    <p data-en="Smarttech AV System PTE LTD specializes in integrated audio-visual solutions for educational institutions, corporate offices, government facilities, and military sites. We provide high-performance projection systems, reliable broadcasting solutions, and intuitive control panels. Our team is passionate about delivering seamless, future-ready experiences using trusted brands like Epson, NEC, Barco, and Logitech."
-       data-zh="Smarttech AV System PTE LTD 专注于为教育机构、企业会议室、政府机关与兵营提供集成影音系统。我们提供高性能投影系统、广播解决方案及智能中控面板，致力于带来稳定流畅、面向未来的视听体验。使用品牌包括 Epson、NEC、Barco 与 Logitech。">
-    </p>
-  </section>  <section id="services" class="section">
-    <h2 data-en="Our Services" data-zh="服务项目">Our Services</h2>
-    <ul class="services">
-      <li><span>🎓</span> <span data-en="School Projection System" data-zh="学校投影系统"></span></li>
-      <li><span>🪖</span> <span data-en="Army Camp AV Integration" data-zh="兵营音响系统"></span></li>
-      <li><span>💼</span> <span data-en="Corporate Meeting Rooms" data-zh="企业会议室"></span></li>
-      <li><span>📢</span> <span data-en="Public Address Systems" data-zh="广播系统"></span></li>
-      <li><span>📺</span> <span data-en="Large Display Panels" data-zh="大屏幕显示器"></span></li>
-    </ul>
-  </section>  <section id="contact" class="section">
-    <h2 data-en="Contact Us" data-zh="联系我们">Contact Us</h2>
-    <p>WhatsApp: +65 8085 2115</p>
-    <p>Email: <a href="mailto:info@smarttechavsg.com">info@smarttechavsg.com</a></p>
-    <form action="https://formspree.io/f/mnqekvqy" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>  <footer>
-    <p>&copy; 2025 Smarttech AV System PTE LTD. All rights reserved.</p>
+  </header>
+
+  <section id="about">
+    <div class="dual">
+      <div class="card" id="about-en">
+        <h2>About Us</h2>
+        <p>Smarttech AV System PTE LTD specializes in integrated audio-visual solutions for educational institutions, corporate offices, government facilities, and military sites. We provide high-performance projection systems, reliable broadcasting solutions, and intuitive control panels. Our team is passionate about delivering seamless, future-ready experiences using trusted brands like Epson, NEC, Barco, and Logitech.</p>
+      </div>
+      <div class="card hidden" id="about-zh">
+        <h2>关于我们</h2>
+        <p>Smarttech AV System PTE LTD 专注于为教育机构、企业会议室、政府机关与兵营提供集成影音系统。我们提供高性能投影系统、广播解决方案及智能中控面板，致力于带来稳定流畅、面向未来的视听体验。使用品牌包括 Epson、NEC、Barco 与 Logitech。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <h2 style="text-align: center">Our Services / 服务项目</h2>
+    <div class="dual">
+      <div class="card">🎓 School Projection System<br />学校投影系统</div>
+      <div class="card">🪖 Army Camp AV Integration<br />兵营音响系统</div>
+      <div class="card">💼 Corporate Meeting Rooms<br />企业会议室</div>
+      <div class="card">📢 Public Address Systems<br />广播系统</div>
+      <div class="card">📺 Large Display Panels<br />大屏幕显示器</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 style="text-align: center">Contact Us / 联系我们</h2>
+    <div class="card" style="text-align: center">
+      <p><strong>WhatsApp:</strong> +65 8085 2115</p>
+      <p><strong>Email:</strong> info@smarttechavsg.com</p>
+      <p>We will integrate a free contact form here via Formspree.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Smarttech AV System PTE LTD | Built by jaysentang89
   </footer>
-</body></html>
 
-<meta name="keywords" content="projector singapore, AV system singapore, Smarttech AV, audio visual singapore, Epson projector, NEC Barco Logitech">
-<meta name="description" content="Smarttech AV System PTE LTD - Experts in projection, broadcasting, and AV solutions for schools, military, corporate, and government projects.">
-
-<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-  <input type="text" name="name" placeholder="Your Name / 您的名字" required>
-  <input type="email" name="email" placeholder="Your Email / 电邮" required>
-  <textarea name="message" placeholder="Your Message / 留言内容"></textarea>
-  <button type="submit">Send / 发送</button>
-</form>
+  <script>
+    function switchLang(lang) {
+      const show = lang === 'zh';
+      document.getElementById("slogan-en").classList.toggle("hidden", show);
+      document.getElementById("slogan-zh").classList.toggle("hidden", !show);
+      document.getElementById("about-en").classList.toggle("hidden", show);
+      document.getElementById("about-zh").classList.toggle("hidden", !show);
+    }
+  </script>
+</body>
+</html>
