@@ -7,149 +7,121 @@
   <meta name="description" content="Smarttech AV System PTE LTD - Smart projector, AV, and communication solutions in Singapore" />
   <meta name="keywords" content="projector singapore, AV solutions, Epson, Sharp, Barco, Logitech, Jabra, Samsung, LG, smarttech AV" />
   <meta name="author" content="Smarttech AV System PTE LTD" />
-  <title>Smarttech AV System</title>
+  <title>Smarttech AV System PTE LTD</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Roboto', sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(to bottom right, #001f3f, #0074D9);
-      color: white;
+      background-color: #f4f8fb;
+      color: #333;
     }
     header {
-      padding: 2rem;
-      text-align: center;
-      background-color: rgba(0,0,0,0.3);
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.2rem;
-    }
-    .slogan {
-      font-size: 1.2rem;
-      color: #00d8ff;
-    }
-    nav {
+      background-color: #003366;
+      color: white;
+      padding: 1rem 2rem;
       display: flex;
-      justify-content: center;
-      gap: 2rem;
-      margin: 1rem 0;
+      justify-content: space-between;
+      align-items: center;
     }
     nav a {
-      color: #ffffff;
+      color: white;
+      margin-left: 1rem;
       text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
     }
-    nav a:hover {
-      color: #00d8ff;
+    .hero {
+      background-color: #007bff;
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
     }
-    section {
+    .section {
+      padding: 3rem 2rem;
       max-width: 1000px;
       margin: auto;
-      padding: 2rem;
     }
-    .dual {
-      display: flex;
-      gap: 2rem;
-      flex-wrap: wrap;
-    }
-    .card {
-      background-color: rgba(255,255,255,0.1);
-      border-radius: 1rem;
-      padding: 1.5rem;
-      flex: 1 1 45%;
-      min-width: 300px;
+    .section h2 {
+      color: #003366;
       margin-bottom: 1rem;
     }
-    .services .card {
-      text-align: center;
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    .brand-logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .brand-logos img {
+      height: 60px;
+      object-fit: contain;
     }
     footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: rgba(0,0,0,0.4);
-      font-size: 0.9rem;
-    }
-    .lang-switch {
-      text-align: center;
-      margin-top: 1rem;
-    }
-    button {
-      background-color: #0074D9;
-      border: none;
-      padding: 0.5rem 1rem;
-      margin: 0 0.5rem;
-      border-radius: 8px;
-      cursor: pointer;
+      background-color: #003366;
       color: white;
-    }
-    .hidden {
-      display: none;
+      text-align: center;
+      padding: 2rem 1rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Smarttech AV System</h1>
-    <p class="slogan" id="slogan-en">Smart Solutions for Projection, Sound, and Communication</p>
-    <p class="slogan hidden" id="slogan-zh">智享视听，连接未来</p>
+    <div><strong>Smarttech AV System</strong></div>
     <nav>
-      <a href="#about">About / 关于我们</a>
-      <a href="#services">Services / 服务项目</a>
-      <a href="#contact">Contact / 联系我们</a>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#brands">Brands</a>
     </nav>
-    <div class="lang-switch">
-      <button onclick="switchLang('en')">English</button>
-      <button onclick="switchLang('zh')">中文</button>
-    </div>
   </header>
 
-  <section id="about">
-    <div class="dual">
-      <div class="card" id="about-en">
-        <h2>About Us</h2>
-        <p>Smarttech AV System PTE LTD specializes in integrated audio-visual solutions for educational institutions, corporate offices, government facilities, and military sites. We provide high-performance projection systems, reliable broadcasting solutions, and intuitive control panels. Our team is passionate about delivering seamless, future-ready experiences using trusted brands like Epson, NEC, Barco, and Logitech.</p>
-      </div>
-      <div class="card hidden" id="about-zh">
-        <h2>关于我们</h2>
-        <p>Smarttech AV System PTE LTD 专注于为教育机构、企业会议室、政府机关与兵营提供集成影音系统。我们提供高性能投影系统、广播解决方案及智能中控面板，致力于带来稳定流畅、面向未来的视听体验。使用品牌包括 Epson、NEC、Barco 与 Logitech。</p>
-      </div>
-    </div>
+  <section class="hero">
+    <h1>Smart Solutions for Projection, Sound, and Communication</h1>
+    <p>智享视听，连接未来</p>
+    <p><strong>WhatsApp:</strong> +65 8085 2115 | <strong>Email:</strong> smarttechavsystem@gmail.com</p>
   </section>
 
-  <section id="services" class="services">
-    <h2 style="text-align: center">Our Services / 服务项目</h2>
-    <div class="dual">
-      <div class="card">🎓 School Projection System<br />学校投影系统</div>
-      <div class="card">🪖 Army Camp AV Integration<br />兵营音响系统</div>
-      <div class="card">💼 Corporate Meeting Rooms<br />企业会议室</div>
-      <div class="card">📢 Public Address Systems<br />广播系统</div>
-      <div class="card">📺 Large Display Panels<br />大屏幕显示器</div>
-    </div>
+  <section id="about" class="section">
+    <h2>About Us / 关于我们</h2>
+    <p><strong>Smarttech AV System PTE LTD</strong> is a Singapore-based company specializing in professional AV integration for educational institutions, military camps, corporate meeting rooms, and government agencies. Our core focus is on high-quality projection systems, sound systems, broadcasting solutions, and large display panels.</p>
+    <p><strong>Smarttech AV System PTE LTD</strong> 是一家总部位于新加坡的专业视听集成公司，专注于为教育机构、军营、企业会议室和政府单位提供高质量的投影系统、音响系统、广播解决方案和大屏幕显示服务。</p>
   </section>
 
-  <section id="contact">
-    <h2 style="text-align: center">Contact Us / 联系我们</h2>
-    <div class="card" style="text-align: center">
-      <p><strong>WhatsApp:</strong> +65 8085 2115</p>
-      <p><strong>Email:</strong> info@smarttechavsg.com</p>
-      
+  <section id="services" class="section bg-light">
+    <h2>Our Services / 服务项目</h2>
+    <ul>
+      <li>🎓 School Projection Systems / 学校投影系统</li>
+      <li>🏢 Corporate AV Solutions / 企业视听解决方案</li>
+      <li>🎖️ Military Camp AV Systems / 兵营投影音响系统</li>
+      <li>📢 Broadcasting & Paging Systems / 广播与呼叫系统</li>
+      <li>🖥️ Large Display Integration / 大屏幕显示集成</li>
+    </ul>
+  </section>
+
+  <section id="brands" class="section">
+    <h2>Our Brands / 合作品牌</h2>
+    <div class="brand-logos">
+      <img src="brand_logos/toa.png" alt="TOA">
+      <img src="brand_logos/jabra.png" alt="Jabra">
+      <img src="brand_logos/barco.png" alt="Barco ClickShare">
+      <img src="brand_logos/mipro.png" alt="Mipro">
+      <img src="brand_logos/datavideo.png" alt="Datavideo">
+      <img src="brand_logos/audiotechnica.png" alt="Audio-Technica">
+      <img src="brand_logos/yamaha.png" alt="Yamaha">
+      <img src="brand_logos/aver.png" alt="AVER">
+      <img src="brand_logos/lg.png" alt="LG">
+      <img src="brand_logos/samsung.png" alt="Samsung">
     </div>
   </section>
 
   <footer>
-    &copy; 2025 Smarttech AV System PTE LTD | Built by jaysentang
+    <p>&copy; 2025 Smarttech AV System PTE LTD. All rights reserved.</p>
   </footer>
-
-  <script>
-    function switchLang(lang) {
-      const show = lang === 'zh';
-      document.getElementById("slogan-en").classList.toggle("hidden", show);
-      document.getElementById("slogan-zh").classList.toggle("hidden", !show);
-      document.getElementById("about-en").classList.toggle("hidden", show);
-      document.getElementById("about-zh").classList.toggle("hidden", !show);
-    }
-  </script>
 </body>
 </html>
